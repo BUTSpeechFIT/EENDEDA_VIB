@@ -1,0 +1,2 @@
+2023.08.30  modify PIT loss to support multiple sampling. 
+2023.09.01 modify PIT loss and sampling to use mean to get permutation, and then calculate PIT between them

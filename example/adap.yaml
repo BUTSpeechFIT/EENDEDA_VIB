@@ -1,0 +1,44 @@
+# training options
+#init_model_path:
+#init_epochs: 
+attractor_loss_ratio: 1.0
+attractor_encoder_dropout: 0.1
+attractor_decoder_dropout: 0.1
+context_size: 7
+detach_attractor_loss: False
+dev_batchsize: 128
+encoder_units: 2048
+feature_dim: 23
+frame_shift: 80
+frame_size: 200
+use_last_samples: True
+gpu: 1
+gradclip: 5
+hidden_size: 256
+input_transform: logmel_meannorm
+log_report_batches_num: 1000
+max_epochs: 100
+model_type: TransformerEDA
+noam_warmup_steps: 100000
+num_frames: 500
+num_speakers: 4
+num_workers: 4
+optimizer: noam
+#output_path: 
+sampling_rate: 8000
+seed: 3
+subsampling: 10
+time_shuffle: True
+train_batchsize: 64
+transformer_encoder_dropout: 0.1
+transformer_encoder_n_heads: 4
+transformer_encoder_n_layers: 4
+train_features_dir: /path/to/pre-extracted/features #TODO 
+valid_features_dir: /path/to/pre-extracted/features #TODO
+#train_data_dir: 
+#valid_data_dir: /mnt/matylda4/qzhang/workspace/01diarization/data/multispk/2-4spks_50-25-25_2480h/validation/data_ssd
+#
+#num_zsamples:
+#average_type:        
+#kld_loss_weight:       
+#kld_weight_type:

@@ -1,0 +1,27 @@
+# training options
+context_size: 7
+encoder_units: 2048
+estimate_spk_qty: 2
+estimate_spk_qty_thr: -1
+feature_dim: 23
+frame_shift: 80
+frame_size: 200
+gpu: 0
+hidden_size: 256
+infer_data_dir: /path/to/datadir/of/the/testset # TODO. data dir is following kaldi with wav.scp etc..
+input_transform: logmel_meannorm
+median_window_length: 1
+model_type: TransformerEDA
+num_frames: -1
+sampling_rate: 8000
+seed: 3
+subsampling: 10
+time_shuffle: True
+transformer_encoder_dropout: 0.1
+transformer_encoder_n_heads: 4
+transformer_encoder_n_layers: 4
+# Parameters below will be fed bu the top-level script infer.sh
+#models_path: /path/to/the/modelsdir/including pt files. 
+#epochs: 90-100
+#threshold: 0.5
+#rttms_dir: /path/to/the/ground truth/rttm/of/the/testset 

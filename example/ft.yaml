@@ -1,0 +1,39 @@
+# training options
+#init_model_path: /path/to/model. will be fed by the top-level script (ft.sh).
+#init_epochs: 10-20
+attractor_loss_ratio: 1.0
+attractor_encoder_dropout: 0.1
+attractor_decoder_dropout: 0.1
+context_size: 7
+detach_attractor_loss: True
+dev_batchsize: 128
+encoder_units: 2048
+feature_dim: 23
+frame_shift: 80
+frame_size: 200
+use_last_samples: True
+gpu: 1
+gradclip: 5
+hidden_size: 256
+input_transform: logmel_meannorm
+log_report_batches_num: 100
+max_epochs: 200
+model_type: TransformerEDA
+num_frames: 500
+num_speakers: 7
+num_workers: 1
+optimizer: adam
+lr: 1e-5
+#output_path: /path/to/output # will be fed by the top-level script ft.sh 
+sampling_rate: 8000
+seed: 1
+subsampling: 10
+time_shuffle: True
+train_batchsize: 32
+transformer_encoder_dropout: 0.1
+transformer_encoder_n_heads: 4
+transformer_encoder_n_layers: 4
+train_data_dir: #/path/to/wav/of/train/set #TODO 
+valid_data_dir: #/path/to/wav/of/dev/set   #TODO
+#train_features_dir: /path/to/pre-extracted/features 
+#valid_features_dir: /path/to/pre-extracted/features
