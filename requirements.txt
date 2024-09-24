@@ -1,9 +1,9 @@
 librosa==0.9.1
-logging==0.5.1.2
-numpy==1.21.6
+logging
+numpy==1.22
 safe_gpu
 scipy==1.7.3
 soundfile==0.12.1
 tensorboard
-torch==1.10.0
+torch==1.13.1
 yamlargparse==1.31.1
